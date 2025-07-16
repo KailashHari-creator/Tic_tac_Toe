@@ -1,0 +1,27 @@
+.result-banner {
+  margin-top: 20px;
+  padding: 12px;
+  background: #00ffff22;
+  color: #0ff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease-out;
+  box-shadow: 0 0 12px #00ffffaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.result-banner.success {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+}

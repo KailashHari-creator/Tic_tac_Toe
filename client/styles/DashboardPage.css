@@ -1,0 +1,83 @@
+.dashboard-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.statistics-section {
+  margin-top: 40px;
+  background: #1c1c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff3;
+}
+
+.statistics-section p {
+  margin: 8px 0;
+}
+.dashboard-header {
+  color: #0ff;
+  text-shadow: 0 0 5px #00ffff;
+}
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.dashboard-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.dashboard-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.dashboard-header a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dashboard-header a:hover {
+  text-decoration: underline;
+}
+.dashboard-header button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0f0f0f;
+  color: #0ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff88;
+}
+.dashboard-header button:hover {
+  background: #111;
+  transform: scale(1.05);
+}
+.dashboard-header button:focus {
+  outline: none;
+  box-shadow: 0 0 15px #00ffffaa;
+}
+.dashboard-header button:active {
+  transform: scale(0.95);
+}
+.dashboard-header button:disabled {
+  background: #333;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.dashboard-header button:disabled:hover {
+  background: #333;
+  transform: none;
+}
+.dashboard-header button:disabled:focus {
+  box-shadow: none;
+}
+.dashboard-header button:disabled:active {
+  transform: none;
+}
+
+.dashboard-header button:disabled:hover {
+  background: #333;
+  transform: none;
+}

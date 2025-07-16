@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+  box-shadow: 0 0 10px #0ff4;
+  border-bottom: 1px solid #0ff3;
+}
+
+.nav-link,
+.nav-button {
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-button:hover {
+  color: #00e5ff;
+}

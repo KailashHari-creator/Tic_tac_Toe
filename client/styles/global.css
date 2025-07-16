@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button {
+  background: #0f0f0f;
+  color: #0ff;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 1px solid #0ff;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff88;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #111;
+  transform: scale(1.05);
+}
+
+h2, h3 {
+  text-shadow: 0 0 5px #0ff;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: transparent; /* ✅ Inherit from body */
+  font-family: 'Orbitron', sans-serif; /* Match the rest */
+}
+
+.top-player-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #1c1c2c; /* ✅ dark background */
+  color: #0ff;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+}
+.top-player-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffff88;
+}
+
+
+.game-board-card {
+  background: #1c1c2c;
+  color: #0ff;
+  padding: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  min-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.game-board-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 255, 255, 0.4);
+}
+
+
+.button-row {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background: #0f0f0f;
+  color: #0ff;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 1px solid #0ff;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff88;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #111;
+  transform: scale(1.05);
+}
+
+
+.stats-box {
+  background: #1c1c2c; /* ✅ dark background */
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  margin-top: 1rem;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  color: #0ff; /* match text color */
+}
+
+
+.stats-collapsed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 2rem;
+}
+
+.stats-expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.stats-header h3 {
+  margin: 0;
+}
+.stats-header i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.stats-header i.rotate {
+  transform: rotate(180deg);
+}
+.stats-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stats-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+.stats-content p {
+  color: #0ff;
+}
+
+.stats-content p span {
+  font-weight: bold;
+  color: #0ff;
+}
+.stats-content p span.losses {
+  color: #f44336;
+}
+.stats-content p span.draws {
+  color: #ff9800;
+}
+.stats-content p span.recent-opponents {
+  color: #2196f3;
+}
+
+.stats-content p span.recent-opponents a {
+  color: #2196f3;
+  text-decoration: none;
+}
+.stats-content p span.recent-opponents a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.player-card {
+  width: 120px;
+  background: #00ffff11;
+  color: #0ff;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 8px #0ff4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #0fffff99;
+}
+
+.avatar {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.symbol {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.player-stats {
+  font-size: 0.9rem;
+  color: #0ff8;
+  margin-top: 10px;
+}
