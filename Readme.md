@@ -19,13 +19,6 @@ A sleek and stylish real-time game dashboard featuring:
 
 ---
 
-## 📷 Preview
-
-<img src="https://your-screenshot-link.com/login-preview.png" alt="Login UI" width="400"/>  
-<img src="https://your-screenshot-link.com/dashboard-preview.png" alt="Dashboard UI" width="400"/>
-
----
-
 ## 🛠️ Technologies Used
 
 - **Frontend:** React, React Router, CSS (Neon styling)
