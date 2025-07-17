@@ -14,5 +14,6 @@ const pool = new Pool({
 
 export default pool;
 export const getDbConnection = () => {
+  console.log('Connection :', pool);
   return pool.connect();
 };
