@@ -10,7 +10,7 @@ const SignupPage = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('/api/auth/signup', {
+      const res = await fetch('http://43.205.242.23:3001/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password, avatar })
@@ -133,7 +133,7 @@ const SignupPage = () => {
         </form>
         <p style={styles.footerText}>
           Already have an account?{' '}
-          <Link to="/" style={styles.link}>Login</Link>
+          <Link to="http://43.205.242.23:3001/" style={styles.link}>Login</Link>
         </p>
       </div>
     </div>

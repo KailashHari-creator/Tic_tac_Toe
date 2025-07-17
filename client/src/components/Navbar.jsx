@@ -26,14 +26,14 @@ const Navbar = () => {
 const logout = () => {
   localStorage.removeItem('token');
   window.dispatchEvent(new Event("storage")); // ✅ notify App
-  nav('/');
+  nav('http://43.205.242.23:3001/'); // Redirect to home page
 };
 
 
   return (
     <nav className="navbar">
-      <Link className="nav-link" to="/dashboard">Dashboard</Link>
-      <Link className="nav-link" to="/edit-profile">Edit Profile</Link>
+      <Link className="nav-link" to="http://43.205.242.23:3001/dashboard">Dashboard</Link>
+      <Link className="nav-link" to="http://43.205.242.23:3001/edit-profile">Edit Profile</Link>
       <button className="nav-button" onClick={logout}>Logout</button>
     </nav>
   );

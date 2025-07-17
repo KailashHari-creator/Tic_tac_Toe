@@ -18,7 +18,7 @@ const DashboardPage = () => {
 
   // 🔐 Early redirect if no token
   useEffect(() => {
-    if (!token) navigate('/');
+    if (!token) navigate('http://43.205.242.23:3001/');
   }, [token, navigate]);
 
   if (!token) return null; // Prevent rest of code from running
@@ -28,7 +28,7 @@ const DashboardPage = () => {
     dbPlayerID = jwtDecode(token).id;
   } catch (err) {
     console.error('Invalid token:', err);
-    navigate('/');
+    navigate('http://43.205.242.23:3001/');
     return null;
   }
 
@@ -36,7 +36,7 @@ const DashboardPage = () => {
 
 
   const fetchStats = async () => {
-    const res = await fetch('/api/game/stats', {
+    const res = await fetch('http://43.205.242.23:3001/api/game/stats', {
       headers: { Authorization: `Bearer ${token}` }
     });
     if (res.ok) setStats(await res.json());

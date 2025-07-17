@@ -30,10 +30,10 @@ const App = () => {
     <>
       {token && <Navbar />}
       <Routes>
-        <Route path="/" element={token ? <Navigate to="/dashboard" /> : <LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/dashboard" element={token ? <DashboardPage /> : <Navigate to="/" />} />
-        <Route path="/edit-profile" element={token ? <EditProfilePage /> : <Navigate to="/" />} />
+        <Route path="http://43.205.242.23:3001/" element={token ? <Navigate to="/dashboard" /> : <LoginPage />} />
+        <Route path="http://43.205.242.23:3001/signup" element={<SignupPage />} />
+        <Route path="http://43.205.242.23:3001/dashboard" element={token ? <DashboardPage /> : <Navigate to="http://43.205.242.23:3001/" />} />
+        <Route path="http://43.205.242.23:3001/edit-profile" element={token ? <EditProfilePage /> : <Navigate to="http://43.205.242.23:3001/" />} />
       </Routes>
     </>
   );

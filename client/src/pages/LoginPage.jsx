@@ -8,7 +8,7 @@ const LoginPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const res = await fetch('/api/auth/login', {
+    const res = await fetch('http://43.205.242.23:3001/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
@@ -17,7 +17,7 @@ const LoginPage = () => {
     if (res.ok) {
       localStorage.setItem('token', data.token);
       window.dispatchEvent(new Event("storage"));
-      nav('/dashboard');
+      nav('http://43.205.242.23:3001/dashboard');
     } else alert(data.message);
   };
 
@@ -107,7 +107,7 @@ const LoginPage = () => {
         </form>
         <p style={styles.footerText}>
           Don't have an account?{' '}
-          <Link to="/signup" style={styles.link}>Signup</Link>
+          <Link to="http://43.205.242.23:3001/signup" style={styles.link}>Signup</Link>
         </p>
       </div>
     </div>
