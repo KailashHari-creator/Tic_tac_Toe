@@ -1,4 +1,4 @@
-# ✨ Neon Login Game Dashboard ✨
+# ✨ Tic Tac Toe Game ✨
 
 A sleek and stylish real-time game dashboard featuring:
 - 🔐 Secure Login & Signup with JWT
