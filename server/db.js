@@ -10,6 +10,9 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
+  ssl: {
+    rejectUnauthorized: false, // Set to true if you want to enforce SSL certificate validation
+  },
 });
 
 export default pool;
